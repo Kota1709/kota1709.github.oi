@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+.stylish-regular {
+    font-family: "Stylish", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+html, body {
+    overscroll-behavior: none;
+    width: 100%;
+    overflow-x: hidden;
+    background-color:#ecedf4;
+    background-image: url(../img/urlbackground.png);
+    background-attachment: fixed;
+}
+
+#p2p3-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: "protest revolution";
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    
+}
+
+.home {
+    text-align: center;
+    border-radius: 3px;
+    padding: .5em 1em;
+    margin: 1em;
+    border: #2b54d1 solid 1px;
+    background-color: #faf9f6;
+    border-radius: 5px;
+    cursor: pointer; 
+} 
+.about {
+    text-align: center;
+    border-radius: 3px;
+    padding: .5em 1em; 
+    margin: 1em;
+    border: #2b54d1 solid 1px;
+    background-color: #faf9f6;
+    border-radius: 5px;
+    cursor: pointer; 
+    
+} 
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    color: #2b54d1;
+    font-family:  "Protest Revolution", sans-serif;
+    font-size: 4em
+    
+}
+
+#arrow {
+    font-size: .7em;
+}
+
+
+
+
+
+
+.container {
+    width: 70%;
+    min-height: 100vh;
+    position: relative;
+    /* border: red solid .5px; */
+}
+
+.container, img {
+    max-width: 100%; 
+    display: block;
+    margin: 0 auto;
+    padding-top: 3em;
+    /* line-height: 2em; */
+   
+}
+
+
+p {
+    font-family: DM mono;
+    font-weight: 200;
+    font-size: .9em;
+    color: #2b54d1;
+    background-color:  #faf9f6;
+    border: #2b54d1 solid .5px;
+    border-radius: 4px;
+    text-align: center;
+    padding: .5em;
+    box-shadow: 5px 5px 15px #b7b7b7;
+}
+
+
+/* story 1 scene 1: arctic */
+
+
+.arctic-1 {
+    position: absolute;
+    
+}
+.arctic-2 {
+    position: absolute;
+}
+
+.arctic {
+    position: absolute;
+    z-index: 15;
+}
+
+/* story 1 scene 2: city */
+
+.p-city {
+    position: absolute;
+    z-index: 10;
+    width: 30%;
+    top: 10%;
+    left: 10%;
+    
+}
+
+.city-1 {
+    position: absolute;
+}
+
+.city-2 {
+    position: absolute;
+}
+
+.city-3 {
+    position: absolute;
+}
+
+.city-4 {
+    position: absolute;
+}
+
+/* story 1 scene 3: fossil fuel */
+
+.p-fossilfuel {
+    position: absolute;
+    z-index: 10;
+    width: 40%;
+    bottom: 20%;
+    left: 0;
+    
+}
+
+.fossilfuel-1 {
+    position: absolute;
+}
+
+.fossilfuel-2 {
+    position: absolute;
+}
+
+/* story 1 scene 4: manufacturing */
+
+.p-manu {
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    top: 0;
+    right: 0;
+}
+
+/* story 1 scene 5: deforestation*/
+
+.deforestation-1 {
+    position: absolute;
+}
+
+.p-defor {
+    position: absolute;
+    z-index: 10;
+    width: 40%;
+    top: 0;
+    left: 0;
+}
+
+/* story 1 scene 6: transportation */
+
+.p-trans {
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    top: 10%;
+    left: 0;
+        
+}
+
+/* ignorance */
+
+.ignorance-1 {
+    position: absolute;
+}
+
+.ignorance-2 {
+    position: absolute;
+}
+
+.p-ignore-1 {
+    width: 80%;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.p-ignore-2 {
+    position: absolute;
+    right: 5%;
+    bottom: 45%;
+    z-index: 10;
+}
+
+.p-ignore-3 {
+    position: absolute;
+    right: 50%;
+    bottom: 40%;
+    z-index: 10;
+
+}
+
+.p-ignore-4 {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    z-index: 10;
+}
+
+/* story 1 scene 7: lab */
+
+.lab-1 {
+    position: absolute;
+}
+
+.p-lab {
+    position: absolute;
+    z-index: 10;
+    width: 40%;
+    top: 0;
+    right: 0;
+}
+
+/* story 1 scene 8: rush */
+
+.rush-1, .rush-2, .rush-3 {
+    position: absolute;
+}
+
+.p-rush {
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    top: 10%;
+    left: 0;
+}
+
+.p-rush-2 {
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    bottom: 12%;
+    right: 0;
+    margin-bottom: 3em;
+}
+
+/* story 2 scene 1: arctic today */
+
+.modernarctic-1, .modernarctic-2, .modernarctic-3 {
+    position: absolute; 
+
+}
+
+/* story 2 scene 2: meeting noah */
+
+.p-reachingnoah {
+    width: 40%;
+}
+
+
+
+
+/* story 2 scene 3: scroll */
+
+.handingthescroll-1 {
+    position: absolute ;
+    top: 0%;
+}
+
+.handingthescroll-2 {
+    position: absolute;
+    top: 5%;
+}
+
+.handingthescroll-3 {
+    position: absolute;
+    top: 10%;
+}
+
+.handingthescroll {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.p-handingthescroll-1 {
+    width: 26%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.p-handingthescroll-2 {
+    width: 26%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.p-handingthescroll-3 {
+    width: 26%;
+    height: 100%;
+    margin-right: 5%;
+    margin-top: 20%;
+}
+
+
+
+
+/* story 2 scene 4: message */
+
+.p-message {
+    display: block;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.message-reveal {
+    position: absolute;
+}
+
+
+/* story 2 scene 5: gathering */
+
+.p-meeting-1 {
+    top: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.p-meeting-2 {
+    position: absolute;
+    bottom: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+/* story 2 scene 6: building the ark */
+
+.creatingark1, .creatingark2, .creatingark3 {
+    padding-bottom: 1em;
+}
+
+/* story 2 scene 7: animals boarding */
+
+.animals-1 {
+    position: absolute;
+}
+
+.animals-2 {
+    position: absolute;
+}
+
+.animals-3 {
+    position: absolute;
+}
+
+/* story 2 scene 8: rain */
+
+.rain-1 {
+    position: absolute;
+}
+
+.rain-2 {
+    position: absolute;
+}
+
+.rain-3 {
+    position: absolute;
+}
+/* story 2 scene 9: storm */
+
+.thestorm {
+    position: absolute;
+}
+
+/* story 2 scene 10: survival */
+
+.survival {
+    position: absolute;
+    bottom: 20%;
+}
+
+.p-survival {
+    position: absolute;
+    right: 60%;
+}
+
+.p-survival-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    z-index: 10;
+}
+
+/* story done*/
+
+a:link {
+    text-decoration: none;
+    font-family: "protest revolution";
+    color: #2b54d1;
+}
+
+a:visited {
+    color: #2b54d1;
+}
+
+a:hover {
+    opacity: .6;
+}
+
+.options {
+    font-family: "protest revolution";
+    position: relative;
+    min-height: 100vh;
+}
+
+#revealpos {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+
+}
+
+.reveal {
+    font-size: 2em;
+    position: absolute;
+    bottom: 50%; 
+    display: flex;
+    padding: .5em;
+    border: #2b54d1 solid 1px;
+    background-color: #faf9f6;
+    border-radius: 5px;
+    padding: 1em;
+    cursor: pointer; 
+}
+
+/* about Page */
+
+.about-heading {
+    font-family: protest revolution;
+    font-size: 4em;
+    text-align: center;
+    color: #2b54d1;
+    padding-top: 10%;
+    padding: 5%;
+
+}
+
+.about-info {
+    text-align: left;
+    font-family: DM mono;
+    font-weight: 100;
+    width: 100%;
+    color: #2b54d1;
+    padding: 1% 10%;
+    
+   }
+
+.arctic-link {
+    font-family: DM mono !important;
+    font-weight: 100;
+    text-align: left;
+    text-decoration-line: underline !important;
+    width: 100%;
+    color: #2b54d1;
+    padding: 1% 10%;
+   }
+
+.citations {
+    font-family: DM mono;
+    font-weight: 100;
+    color: #faf9f6;
+    background-color: #172647;
+    width: 100%;
+    margin-top: 10%;
+    padding: 1em;
+    bottom: 0;
+    opacity: 80%;
+    font-size: .8em;
+    border-radius: 0;
+}
+
+
+

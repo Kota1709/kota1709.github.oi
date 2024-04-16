@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+/* animations*/
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(10em);
+  transition: all 1.5s .1s ease-out;
+  /* will-change: all; */
+}
+
+.slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-down {
+  opacity: 0;
+  transform: translateY(-4em);
+  transition: all 1.5s .5s ease-out;
+  /*	will-change: all;*/
+}
+
+.slide-down.is-visible {
+  opacity: 1;
+  transform: translateY(4.5em);
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(5em);
+  transition: all 1.5s .5s ease-out;
+  /*	will-change: all;*/
+}
+
+.slide-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+}
+
+.p-handingthescroll-1.fade-in {
+  transition-delay: 1.5s;
+}
+
+.p-handingthescroll-2.fade-in {
+  transition-delay: 2.5s;
+}
+
+.p-handingthescroll-3.fade-in {
+  transition-delay: 3.5s;
+}
+
+
+.fade-in-out {
+  opacity: 0;
+  animation: fadeAnimation 1s ease-in-out infinite alternate;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-out-once {
+  opacity: 0;
+  animation: fadeAnimation 2s ease-in-out for;
+}
+
+/* .fade-in-out-once.is-visible {
+    opacity: 1;
+  } */
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in-delay {
+  opacity: 0;
+  transition: all 1s 1s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+}
+
+.fade-out.is-visible {
+  opacity: 0;
+  transition: all 2s ease-out;
+  transition-delay: 1s;
+}
+
+.fade-out {
+  opacity: 1;
+}
+
+/* 
+.fade-out {
+  opacity: 0;
+  animation: fadeAnimation 3s ease-out forwards;
+}
+
+@keyframes fadeAnimation {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+} */
+
+
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(-10em) rotate(0);
+  transition: all 1.5s .2s ease-out;
+}
+
+.slide-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+.slide-right-fast {
+  opacity: 1;
+  /* Start with opacity 0 */
+  transform: translateX(-500px);
+  /* Initial position */
+  will-change: transform, opacity;
+  /* Declare what properties will change */
+  transition: opacity 0.5s ease-out, transform 4s 4s ease-out;
+  /* Transition properties */
+
+}
+
+.slide-right-fast.is-visible {
+  opacity: 1;
+  /* Change opacity to 1 when the element is visible */
+  transform: translateX(600px);
+  /* Move the element 1000px to the right */
+  animation: slide-right-fast-animation 4s forwards;
+  /* Apply the keyframes animation */
+  animation-delay: 1s;
+}
+
+@keyframes slide-right-fast-animation {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(65%);
+  }
+}
+
+
+@keyframes slide-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+/* specific-animations-slide-up*/
+
+.handingthescroll-1.slide-up {
+  opacity: 0;
+  transform: translateY(10em);
+  transition: all 1.5s .1s ease-out;
+  transition-delay: 0;
+}
+
+.handingthescroll-1.slide-up.is-visible {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.handingthescroll-2.slide-up {
+  opacity: 0;
+  transform: translateY(10em);
+  transition: all 1.5s .1s ease-out;
+  transition-delay: 1.5s;
+}
+
+.handingthescroll-2.slide-up.is-visible {
+  opacity: 1;
+  transform: translateY(3em)
+}
+
+.handingthescroll-3.slide-up {
+  opacity: 0;
+  transform: translateY(10em);
+  transition: all 1.5s .1s ease-out;
+  transition-delay: 3s;
+}
+
+.handingthescroll-3.slide-up.is-visible {
+  opacity: 1;
+  transform: translateY(6em)
+}
+
+.reveal.slide-up {
+  opacity: 0;
+  transform: translateY(10em);
+  transition: all 1.5s .1s ease-out;
+  transition-delay: 3s;
+}
+
+.reveal.is-visible {
+  opacity: .7;
+  transform: translateY(0)
+}
+
+/*slide-left*/
+
+.arctic-3.slide-left {
+  opacity: 1;
+  transform: translateX(50em) translateY(40em);
+  transition: all 5s .1s ease-out;
+  transition-delay: 1s;
+  /* will-change: all; */
+}
+
+.arctic-3.slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(-70em)translateY(-60em);
+}
+
+
+
+.fossilfuel-1.slide-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 4s .1s ease-out;
+  transition-delay: 1.5s;
+  /* will-change: all; */
+}
+
+.fossilfuel-1.slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(-50em);
+}
+
+.animals-2.slide-left {
+  opacity: 0;
+  transform: translateX(10em);
+  transition: all 1.5s .1s ease-out;
+  transition-delay: 1s;
+}
+
+
+.animals-2.slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animals-3.slide-left {
+  opacity: 0;
+  transform: translateX(10em);
+  transition: all 1.5s .1s ease-out;
+  transition-delay: 2s;
+}
+
+
+.animals-3.slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*slide-right*/
+
+.fossilfuel-2.slide-right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 4s .1s ease-out;
+  transition-delay: 1.5s;
+}
+
+.fossilfuel-2.slide-right.is-visible {
+  opacity: 1;
+  transform: translateX(40em);
+}
+
+
+
+/*specific-animations-fade-in*/
+
+.city-2.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-out;
+  transition-delay: 2s;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+}
+
+.city-3.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-in-out forwards;
+  transition-delay: 2.5s;
+}
+
+.city-4.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-in-out forwards;
+  transition-delay: 3s;
+}
+
+.city-4.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-in-out forwards;
+  transition-delay: 3.5s;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+}
+
+.deforestation-2.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-in-out forwards;
+  transition-delay: 2s;
+}
+
+.deforestation-2.fade-in.is-visible {
+  opacity: 1;
+}
+
+.rain-1.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-in-out forwards;
+}
+
+.rain-1.fade-in.is-visible {
+  opacity: 1;
+}
+
+.rain-2.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-in-out forwards;
+  transition-delay: 2s;
+}
+
+.rain-2.fade-in.is-visible {
+  opacity: 1;
+}
+
+.rain-3.fade-in {
+  opacity: 0;
+  transition: all 1s 1s ease-in-out forwards;
+  transition-delay: 3s;
+}
+
+.rain-3.fade-in.is-visible {
+  opacity: 1;
+}
+
+.rainstorm.fade-in-out {
+  opacity: 0;
+  animation: fadeAnimation .2s ease-in-out infinite alternate;
+}
+
+.p-ignore-2.fade-in {
+  transition-delay: 2s;
+}
+
+.p-ignore-3.fade-in {
+  transition-delay: 3s;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .7;
+  }
+}
+
+/* Define animation keyframes */
+@keyframes delayFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply animation to specific images within sections */
+.container img.delayed-fade-in {
+  animation: delayFadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+  /* Adjust delay timing as needed */
+}
